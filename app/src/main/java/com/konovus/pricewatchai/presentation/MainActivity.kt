@@ -25,6 +25,7 @@ class MainActivity : ComponentActivity() {
                 val html = apiClient.fetchHtml("https://www.amazon.co.uk/Lynx-Jungle-cleanser-refreshing-shower/dp/B0CNRZDSWQ?ref_=ast_sto_dp")
                 println("html body: $html")
                 println("price: ${apiClient.promptLLM(html)}")
+
             }
 
             PriceWatchAITheme {
